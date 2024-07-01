@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Section from "./components/Section"
+import TitlePage from "./components/TitlePage"
+import Tagline from "./components/Tagline"
+import PastryPerfection from "./components/PastryPerfection"
+import Testimonials from "./components/Testimonials"
+import Items from "./components/Items"
+import Contact from "./components/Contact"
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+	return (
+		<div className="h-svh overflow-y-scroll scrollbar-thin">
+			<Section background={true}>
+				<TitlePage />
+			</Section>
+			<Section>
+				<Tagline />
+			</Section>
+			<Section>
+				<PastryPerfection />
+			</Section>
+			<Section>
+				<Testimonials />
+			</Section>
+			<Section>
+				<Items />
+			</Section>
+			<Section>
+				<Contact/>
+			</Section>
+		</div>
+	)
 }
 
 export default App
