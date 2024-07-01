@@ -1,30 +1,63 @@
-# React + TypeScript + Vite
+# Bakery
+![image](https://github.com/cybertron15/bakers/assets/48357640/61846790-690a-4783-ab78-b30796fb8a9a)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A landing page for a bakery with interactive elements, built with Vite, React, and TypeScript, and styled with Tailwind CSS. This project was created as a take-home task for Good Health Company/Digi-prex. The site showcases products and testimonials.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Fast and optimized build with Vite
+- Type-safe code with TypeScript
+- Responsive and modern UI with Tailwind CSS
+- Interactive elements to enhance user experience
+- Showcases bakery products and customer testimonials
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [Yarn](https://yarnpkg.com/)
 
-- Configure the top-level `parserOptions` property like this:
+### Steps
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/cybertron15/bakery.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd bakery
+    ```
+3. Install dependencies:
+    ```sh
+    yarn install
+    ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Usage
+
+### Running Locally
+To run the project locally, use the following command:
+```sh
+yarn dev
 ```
+This will start the Vite development server. Open your browser and navigate to `http://localhost:5173` to see the site.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Building for Production
+To create an optimized production build, use the following command:
+```sh
+yarn build
+```
+The build will be created in the `dist` directory.
+
+### Previewing the Production Build
+To preview the production build locally, use the following command:
+```sh
+yarn preview
+```
+This will start a local server to preview the production build. Open your browser and navigate to `http://localhost:4173` to see the site.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
