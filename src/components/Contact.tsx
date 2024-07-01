@@ -6,7 +6,7 @@ function Contact() {
             <div className="flex flex-col items-center bg-black bg-opacity-50 h-full">
                 <div className="absolute text-white text-3xl font-thin bottom-10 flex flex-col items-center gap-4 text-center">
                     <div className='w-40'>
-                        <img src="/bakers/logosmall.webp" alt="backery" />
+                        <img src="/bakery/logosmall.webp" alt="backery" />
                     </div>
                     <div className="flex flex-col md:flex-row items-center gap-2 w-full">
                         <div className="w-full text-lg">Find us here</div>
