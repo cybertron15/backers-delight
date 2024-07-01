@@ -1,5 +1,4 @@
 import { Flower } from 'lucide-react'
-import React from 'react'
 
 function Tagline() {
     return (

@@ -1,4 +1,3 @@
-import React from 'react';
 
 type Props<T> = {
     title: T;
@@ -14,7 +13,7 @@ function ItemCard({ title, desc, bgImage }: Props<string>) {
                 style={{
                     backgroundImage: `url(${bgImage})`
                 }}
-            ></div>
+            />
             <div className='relative flex gap-2 flex-col justify-center items-center p-4 h-full bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-500 ease-in-out md:rounded-[150px]'>
                 <div className='text-white font-Playwrite text-2xl md:text-4xl text-center group-hover:text-5xl transition-all duration-500 ease-in-out'>
                     {title}
